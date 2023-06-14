@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+/** Colors **/
+
+:root {
+    /* Light */
+    --color-light-50: #f8fafc;
+
+    /* Dark */
+    --color-dark-50: #797984;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000;
+
+    /*Blue */
+    --color-blue-50: #9598ff;
+    --color-blue-100: #474DF5;
+    --color-yellow-100: #FAF5DC;
+    --color-yellow-200: #FFDB54;
+
+    /* Gradient */
+    --color-gradient: linear-gradient(90deg, var(--color-blue-100), var(--color-blue-50));
+}
+
+/* General */
+
+* {
+    font-family: 'Josefin Sans';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    min-height: 100vh;
+    width: 100%;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-gradient);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: var(--color-light-50);
+    padding: 30px 40px;
+    border-radius: 8px;
+    gap: 30px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+    animation: dark-to-light-background 0.3s ease-in-out;
+}
+
+/* Header */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#header h1 {
+    font-size: 40px;
+    position: relative;
+}
+
+/* Content */
+
+.content h3 {
+    font-size: 30px;
+    position: relative;
+    color: var(--color-yellow-200);
+}
+
+.h3-text {
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+#Introduction {
+    font-size: 30px;
+    position: relative;
+    color: var(--color-blue-100);
+}
+
+.content h2 {
+    font-size: 20px;
+    position: relative;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Imgs */
+
+img {
+    width: 30rem;
+}
